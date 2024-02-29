@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Lab4
 {
@@ -12,15 +13,15 @@ namespace Lab4
         public string Name { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
-        public double MathScore { get; set; }
-        public double PhysicsScore { get; set; }
-        public double ChemistryScore { get; set; }
+        public double NaturalSubjectScores { get; set; }
+        public double SocialStudiesScores { get; set; }
+        public double SoftSkillsScore { get; set; }
         public double GPA { get; set; }
         public string AcademicLevel { get; set; }
 
         public void CalculateGPA()
         {
-            GPA = (MathScore + PhysicsScore + ChemistryScore) / 3;
+            GPA = (NaturalSubjectScores + SocialStudiesScores + SoftSkillsScore) / 3;
             if (GPA >= 8)
             {
                 AcademicLevel = "Excellent";

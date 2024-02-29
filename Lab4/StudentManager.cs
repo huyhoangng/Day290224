@@ -26,9 +26,9 @@ namespace Lab4
                 student.Name = updatedStudent.Name;
                 student.Gender = updatedStudent.Gender;
                 student.Age = updatedStudent.Age;
-                student.MathScore = updatedStudent.MathScore;
-                student.PhysicsScore = updatedStudent.PhysicsScore;
-                student.ChemistryScore = updatedStudent.ChemistryScore;
+                student.NaturalSubjectScores = updatedStudent.NaturalSubjectScores;
+                student.SocialStudiesScores = updatedStudent.SocialStudiesScores;
+                student.SoftSkillsScore = updatedStudent.SoftSkillsScore;
                 student.CalculateGPA();
                 Console.WriteLine("Student information updated successfully.");
             }

@@ -85,12 +85,12 @@ namespace Lab4
             student.Gender = Console.ReadLine();
             Console.WriteLine("Enter student age:");
             student.Age = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter student Math score:");
-            student.MathScore = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter student Physics score:");
-            student.PhysicsScore = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter student Chemistry score:");
-            student.ChemistryScore = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter student Natural Subject Scores:");
+            student.NaturalSubjectScores = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter student Social Studies Scores:");
+            student.SocialStudiesScores = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter student Soft Skills Score:");
+            student.SoftSkillsScore = double.Parse(Console.ReadLine());
             student.CalculateGPA();
             return student;
         }
